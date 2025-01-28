@@ -7,7 +7,7 @@ const Food = require('../models/Food');
 // Get all foods
 router.get('/', async (req, res) => {
     const foods = await Food.find();
-    res.json(foods);    
+    res.json(foods);
 });
 
 // Post food
